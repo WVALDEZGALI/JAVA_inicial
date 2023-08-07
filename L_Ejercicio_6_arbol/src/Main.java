@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //declarar la altura del arbol
-        int altura = 10;
+        int altura = 9;
 
         //bucle para recorrer las filas del arbol
         for (int fila = 0; fila < altura; fila ++) {
