@@ -13,6 +13,8 @@ public class Main {
         vector[2]=22;
         vector[3]=48;*/
 
+    // Asignacion teclado.
+
         Scanner teclado = new Scanner(System.in);
 
         for ( int i = 0; i < vector.length; i ++ ){
@@ -30,6 +32,5 @@ public class Main {
             System.out.println("---------------------");
 
         }
-
     }
 }
