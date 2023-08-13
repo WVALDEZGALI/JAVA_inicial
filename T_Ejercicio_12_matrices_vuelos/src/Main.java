@@ -33,16 +33,45 @@ public class Main {
 
         int asientos [][] = new int [6][3];
 
-        Scanner ingresoTecla = new Scanner(System.in);
+
+        Scanner ingresoTecla1 = new Scanner(System.in);
 
         for (int f = 0; f < 6; f ++) {
             for (int c = 0; c < 3; c ++) {
                 System.out.println("Ingrese los asientos disponibles para el destino: " + f + " en el horario: "+ c);
-                asientos[f][c] = ingresoTecla.nextInt();
+                asientos[f][c] = ingresoTecla1.nextInt();
             }
         }
 
+        Scanner ingresoTecla2 = new Scanner(System.in);
+        String inicioReseva = "";
+        int destino, horario, numAsientos;
 
+        while(!inicioReseva.equalsIgnoreCase("finish")){
+            System.out.println("Ingrese el nuemro del destino al cual desea viajar: ");
+            destino = ingresoTecla1.nextInt();
+            System.out.println("Ingrese el horario en cual desea viajar: ");
+            horario = ingresoTecla1.nextInt();
+            System.out.println("Ingrese la cantidad de asientos deseada: ");
+            numAsientos = ingresoTecla1.nextInt();
+            if (destino >= 0 && destino <= 5) {
+                if (horario >= 0 && horario <= 2) {
+                    if (asientos[destino][horario] >= numAsientos) {
+                        System.out.println ("Su reserva fue realizada con exito.");
+                        asientos[destino][horario] = asientos[destino][horario] - numAsientos;
+                    } else {
+                        System.out.println ("No hay asientos disponibles.");
+                    }
+                } else {
+                    System.out.println ("Ingrese un horario valido entre 0 y 2");
+                }
+            } else {
+                System.out.println ("Ingrese un destino valido entre 0 y 5.");
+            }
 
+            System.out.println("Si desea hacer otra reserva ingrese cualquier letra, de lo contrario escria la palabra" +
+                    " finish");
+            inicioReseva = ingresoTecla2.next();
+        }
     }
 }
