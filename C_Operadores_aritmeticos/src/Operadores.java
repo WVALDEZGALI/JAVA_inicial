@@ -1,4 +1,4 @@
-public class Main {
+public class Operadores {
     public static void main(String[] args) {
 
         int sum1, sum2, resultadoSum;
