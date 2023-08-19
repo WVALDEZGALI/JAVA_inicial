@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="U_Ejecutables_punto_Jar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/U_Ejecutables_punto_Jar_jar</output-path>
+    <root id="archive" name="U_Ejecutables_punto_Jar.jar">
+      <element id="module-output" name="U_Ejecutables_punto_Jar" />
+    </root>
+  </artifact>
+</component>
