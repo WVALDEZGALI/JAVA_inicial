@@ -3,29 +3,16 @@ public class IfStatement {
 
     public static void main(String[] args) {
 
-        int num1 = 6;
-        int num2 = 8;
+        int fileSended = 0;
+        boolean isBluetoothEneabled = false;
 
-        if (num1 > num2) {
-
-            System.out.println("El numero 1 es mayor que el numero 2");
-
+        if (isBluetoothEneabled) {
+            //Send file
+            fileSended++;
+            System.out.println ("The file was sent " + fileSended);
+        } else {
+            System.out.println ("Please turn on bluetooth, to start transfer " + fileSended );
         }
-        else {
-
-            if (num1 == num2) {
-
-                System.out.println("El numero 1 es igual que el numero 2");
-
-            }
-            else {
-
-                    System.out.println("El numero 1 es menor que el numero 2");
-
-            }
-
-        }
-        
     }
     
 }
