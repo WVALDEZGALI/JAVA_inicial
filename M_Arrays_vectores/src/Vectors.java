@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Vectors {
 
     public static void main(String[] args) {
 
