@@ -15,10 +15,14 @@ public class Arrays {
         androidVersions [2] = "Cupcake";
         androidVersions [3] = "Donut";
 
-        System.out.println (androidVersions [0]);
+        for (int i = 0; i < androidVersions.length; i++) { // Traverse the array with a for loop
+            System.out.println (androidVersions [i]);
+        }
+
+        /* System.out.println (androidVersions [0]);
         System.out.println (androidVersions [1]);
         System.out.println (androidVersions [2]);
-        System.out.println (androidVersions [3]);
+        System.out.println (androidVersions [3]);*/
 
         System.out.println ("-----------------");
 
@@ -31,14 +35,25 @@ public class Arrays {
         cities [3][0] = "Mendoza";
         cities [3][1] = "Rosario";
 
-        System.out.println (cities [0][0]);
+        /* System.out.println (cities [0][0]);
         System.out.println (cities [0][1]);
         System.out.println (cities [1][0]);
         System.out.println (cities [1][1]);
         System.out.println (cities [2][0]);
         System.out.println (cities [2][1]);
         System.out.println (cities [3][0]);
-        System.out.println (cities [3][1]);
+        System.out.println (cities [3][1]);*/
+
+        for (int i = 0; i < cities.length; i++) {
+            for (int j = 0; j < cities [i].length; j++) {
+                System.out.println (cities[i][j]);
+            }
+        }
+
+        String [][][][] animals = new String[2][3][2][2];
+        animals [1][0][0][1] = "Monkey";
+
+
 
 
 
